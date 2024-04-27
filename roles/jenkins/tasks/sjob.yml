@@ -3,12 +3,12 @@
     name: "{{item.job_name}}"
     user: admin
     password: admin123
-  register: jenkins_job_status
+    register: jenkins_job_status
 
 - name: Debug
   debug: 
     msg: "{{jenkins_job_status}}"
-    
+
 - name: Copy Xml File
   ansible.builtin.template:
     src: sjob.xml 
