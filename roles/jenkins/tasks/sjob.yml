@@ -5,9 +5,10 @@
     password: admin123
   register: jenkins_job_status
 
-- name: Copy Xml File
+- name: Debug
   debug: 
     msg: "{{jenkins_job_status}}"
+    
 - name: Copy Xml File
   ansible.builtin.template:
     src: sjob.xml 
