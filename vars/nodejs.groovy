@@ -18,7 +18,7 @@ stages {
     
     stage ('Code Quality'){
         steps {
-            sh 'sonar-scanner -Dsonar.projectKey=${component}'
+            sh 'sonar-scanner -Dsonar.projectKey=${component} -Dsonar.host.url=http://172.31.29.145:9000'
         }
     }
 
