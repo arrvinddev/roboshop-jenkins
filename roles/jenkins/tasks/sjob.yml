@@ -4,6 +4,7 @@
     user: admin
     password: admin123
   register: jenkins_job_status
+  ignore_errors: true
 
 
 - name: Copy Xml File
