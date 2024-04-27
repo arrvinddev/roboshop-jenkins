@@ -7,6 +7,10 @@ pipeline {
         }
     }
 
+    options {
+        ansiColor('xterm')
+    }
+
 
 parameters { 
 choice(name: 'env', choices: ['dev', 'prod'], description: 'choose environment')
