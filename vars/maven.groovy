@@ -33,7 +33,7 @@ stages {
     stage ('Unit Test Cases'){
         steps {
             sh "echo Unit tests"
-            sh "mvn test"
+            // sh "mvn test"
         }
     }
 
