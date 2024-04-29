@@ -10,4 +10,5 @@ mjobs:
   - { git_repo_url: https://github.com/arrvinddev/shipping.git, job_name: shipping  }
   - { git_repo_url: https://github.com/arrvinddev/payment.git, job_name: payment  }
   - { git_repo_url: https://github.com/arrvinddev/dispatch.git, job_name: dispatch  }
+  - { git_repo_url: https://github.com/arrvinddev/frontend.git, job_name: frontend  }
  
