@@ -46,7 +46,9 @@ stages {
     stage ('Release Application'){
         steps {
             sh 'env'
-            sh 'echo Release Application'
+            sh 'curl -v -u admin:admin123 --upload-file server.js http://172.31.30.201:8081/repository/cart/server.js'
+
+
         }
     }
 
