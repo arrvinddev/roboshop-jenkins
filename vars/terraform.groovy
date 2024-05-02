@@ -23,9 +23,15 @@ stages {
             sh 'terraform init -backend-config=env-${env}/state.tfvars'
         }
     }
-    stage('Terraform Apply') {
+    // stage('Terraform Apply') {
+    //     steps {
+    //         sh 'terraform apply -auto-approve -var-file=env-${env}/main.tfvars'
+    //     }
+    // }
+
+    stage('Terraform destroy') {
         steps {
-            sh 'terraform apply -auto-approve -var-file=env-${env}/main.tfvars'
+            sh 'terraform destroy -auto-approve -var-file=env-${env}/main.tfvars'
         }
     }
 }
