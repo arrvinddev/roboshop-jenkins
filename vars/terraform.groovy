@@ -32,25 +32,25 @@ stages {
     
 }
 
-parameters { 
-choice(name: 'env', choices: ['dev', 'prod'], description: 'choose environment to destroy')
- }
+// parameters { 
+// choice(name: 'env', choices: ['dev', 'prod'], description: 'choose environment to destroy')
+//  }
 
- stages {
+//  stages {
 
-    stage('Terraform INIT') {
-        steps {
-            sh 'terraform init -backend-config=env-${env}/state.tfvars'
-        }
-    }
-    stage('Terraform Apply') {
-        steps {
-            sh 'terraform apply -auto-approve -var-file=env-${env}/main.tfvars'
-        }
-    }
+//     stage('Terraform INIT') {
+//         steps {
+//             sh 'terraform init -backend-config=env-${env}/state.tfvars'
+//         }
+//     }
+//     stage('Terraform destroy') {
+//         steps {
+//             sh 'terraform destroy -auto-approve -var-file=env-${env}/main.tfvars'
+//         }
+//     }
 
     
-}
+// }
 
 
 
