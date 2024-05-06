@@ -25,8 +25,8 @@ stages {
     }
     stage('Terraform Apply') { 
         steps {
-             sh 'terraform plan -var-file=env-${env}/main.tfvars'
-            // sh 'terraform apply -auto-approve -var-file=env-${env}/main.tfvars'
+            //  sh 'terraform plan -var-file=env-${env}/main.tfvars'
+            sh 'terraform apply -auto-approve -var-file=env-${env}/main.tfvars'
         }
     }
 
