@@ -45,7 +45,7 @@ choice(name: 'env', choices: ['dev', 'prod'], description: 'choose environment t
     }
     stage('Terraform Apply') {
         steps {
-            sh 'terraform destroy -auto-approve -var-file=env-${env}/main.tfvars'
+            sh 'terraform apply -auto-approve -var-file=env-${env}/main.tfvars'
         }
     }
 
