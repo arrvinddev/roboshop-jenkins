@@ -3,6 +3,7 @@
     name: "{{item.job_name}}"
     user: admin
     password: admin123
+    url: http://172.31.84.116:8080
   register: jenkins_job_status
   ignore_errors: true
 
