@@ -1,8 +1,9 @@
 sjobs: 
-  - { git_repo_url: https://github.com/arrvinddev/roboshop-terraform.git, job_name: roboshop-terraform  }
-  - { git_repo_url: https://github.com/arrvinddev/roboshop-ansible.git, job_name: roboshop-ansible  }
-  - { git_repo_url: https://github.com/arrvinddev/aws-ssm-parameter-store.git, job_name: aws-ssm-parameter-store  }
-  - { git_repo_url: https://github.com/arrvinddev/roboshop-helm.git, job_name: roboshop-helm  }
+  - { git_repo_url: https://github.com/arrvinddev/roboshop-terraform.git, job_name: roboshop-terraform, file_name: Jenkinsfile  }
+  - { git_repo_url: https://github.com/arrvinddev/roboshop-ansible.git, job_name: roboshop-ansible, file_name: Jenkinsfile  }
+  - { git_repo_url: https://github.com/arrvinddev/aws-ssm-parameter-store.git, job_name: aws-ssm-parameter-store, file_name: Jenkinsfile  }
+  - { git_repo_url: https://github.com/arrvinddev/aws-ssm-parameter-store.git, job_name: aws-ssm-parameter-store-ps-docker, file_name: Jenkinsfile-ps  }
+  - { git_repo_url: https://github.com/arrvinddev/roboshop-helm.git, job_name: roboshop-helm, file_name: Jenkinsfile  }
 
 
 mjobs: 
